@@ -1,0 +1,30 @@
+{
+  "job_filters": {
+    "employment_type": [
+      "Contract",
+      "Hybrid",
+      "Remote"
+    ],
+    "keywords": [
+      "cybersecurity"
+    ],
+    "title_patterns": [
+      "*cyber*",
+      "*cloud*",
+      "*devops*"
+    ],
+    "posted_date": 3,
+    "locations": [],
+    "exclude_companies": []
+  },
+  "application_settings": {
+    "auto_apply": true,
+    "apply_delay_seconds": 2,
+    "max_applications_per_day": 100,
+    "enable_notifications": true
+  },
+  "scheduler": {
+    "check_interval_minutes": 1,
+    "enabled": true
+  }
+}

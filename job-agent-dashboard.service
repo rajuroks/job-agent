@@ -1,0 +1,17 @@
+[Unit]
+Description=Dice Job Agent Dashboard
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/job-agent
+Environment="PATH=/home/ubuntu/job-agent/venv/bin"
+ExecStart=/home/ubuntu/job-agent/venv/bin/python main.py dashboard --host 0.0.0.0 --port 5000
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
